@@ -1,5 +1,11 @@
 package com.example.todo.service;
 
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Optional;
+
+import javax.persistence.EntityNotFoundException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -7,13 +13,6 @@ import com.example.todo.entity.Project;
 import com.example.todo.entity.Todo;
 import com.example.todo.repository.ProjectRepository;
 import com.example.todo.repository.TodoRepository;
-
-import java.time.LocalDateTime;
-import java.util.Date;
-import java.util.List;
-import java.util.Optional;
-
-import javax.persistence.EntityNotFoundException;
 
 @Service
 public class TodoService {
